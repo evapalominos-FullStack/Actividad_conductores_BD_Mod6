@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Conductores - Simple</title>
+   
+   <link rel="stylesheet" href="./asset/style.css">
+</head>
+<body>
+    <h1>🚗 Sistema de Conductores y Automóviles</h1>
+
+    <div class="botones">
+        <h2>Consultas Disponibles</h2>
+        
+        <div>
+            <button onclick="verConductores()">Ver Conductores</button>
+            <button onclick="verAutomoviles()">Ver Automóviles</button>
+            <button onclick="verSolitos()">Ver Solitos</button>
+        </div>
+
+        <hr>
+
+        <div>
+            <input type="number" id="edad" placeholder="Edad (ej: 30)">
+            <button onclick="buscarPorEdad()">Buscar conductores sin auto</button>
+        </div>
+
+        <div>
+            <input type="text" id="patente" placeholder="Patente (ej: HXJH55)">
+            <button onclick="buscarPorPatente()">Buscar por patente</button>
+        </div>
+
+        <div>
+            <input type="text" id="inicio" placeholder="Letra (ej: H)" maxlength="1">
+            <button onclick="buscarPorInicio()">Buscar por letra inicial</button>
+        </div>
+    </div>
+
+    <div class="resultados" id="resultados">
+        <p class="cargando">Selecciona una consulta para ver resultados</p>
+    </div>
+
+   <script src="./asset/app.js"></script>
+</body>
+</html>
